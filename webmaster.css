@@ -1,0 +1,474 @@
+* {
+    outline: red 1px transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: grey;
+}
+#titleLink {
+    color:#006942
+}
+#titleLink:hover {
+    color:#19ad77;
+}
+
+/*Icons*/
+.material-symbols-outlined {
+    transform: scale(1.1);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 550,
+    'GRAD' 0,
+    'opsz' 24;
+}
+.down {
+    height: 12px;
+}
+
+/*Code*/
+body {
+    background-image: url(geometric\ background.jpg);
+    font-family: "League Spartan", sans-serif;
+}
+main {
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    /* box-shadow: 0px -4px 16px 4px rgba(0,0,0,0.5); */
+    padding-bottom: 3em;
+}
+
+/***** Navigation *****/
+nav {
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    padding: 10px;
+    font-family: "League Spartan", sans-serif;
+    background-color: rgba(128, 128, 128, 0);
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.5);
+}
+.navContainer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.navLogo {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 300%;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+.navTabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 125%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.dropdownTab {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 3em;
+    min-width: 15em;
+    background: white;
+    padding: 0 1em 1em 1em;
+    text-align: left;
+    border-radius: 0 0 7.5% 7.5%;
+}
+.dropdownTitle {
+    text-align: left;
+    padding-top: .75em;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+}
+.dropdownList {
+    padding-top: .5em
+}
+.dropdownList > li {
+    padding-top: .5em;
+}
+.fadeIn {
+    transition-duration: 3s;
+}
+            
+.navMenu {
+    display: grid;
+    place-items: center;
+}
+
+#navsearch {
+    resize: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: black solid;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: right;
+    width: 100px
+}
+
+#navsearch:focus {
+    background-color: white;
+    width: 500px;
+    transition: width 5s, height 4s;
+    outline: none;
+}
+
+#menu {
+    display: inline-flex;
+}
+
+
+/***** Home Page *****/
+.imageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: calc(100vh - 140px);
+}
+.homeImg {
+    overflow: hidden;
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+.filler {
+    height: 70px;
+}
+.infoBoxDecor {
+    position: relative;
+    background-image: linear-gradient(135deg, #4df068, #006942);
+    padding: 1em;
+    margin: 0 18% -140px 18%;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    z-index: 5;
+}
+.infoBox {
+    position: relative;
+    margin: 1em;
+    padding: 1.5em;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 125%;
+}
+.infoTitle, .mainTitle {
+    padding-bottom: .5em;
+    font-size: 150%;
+    font-weight: bold;
+    color: #006942;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+}
+.reverseTriangleTransition {
+    position: static;
+    height: 3em;
+    margin-bottom: -3em;
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    z-index: 1;
+}
+.greenBackground {
+    background-image: url(green\ background.svg);
+    background-size: cover;
+}
+.logo {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.tripleBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 125%;
+    padding-bottom: 3em;
+}
+.tripBox {
+    position: relative;
+    background-color: white;
+    margin: 2em;
+    padding: 1em;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    transition-duration: .25s;
+}
+.tripBox:hover {
+    transform: scale(1.05);
+    transition-duration: .25s;
+}
+.tripImg {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+#tripImg1 > img {
+    transform: translate(-35%, -22%);
+}
+#tripImg2 > img {
+    transform: translate(-34%, -49%);
+}
+#tripImg3 > img {
+    transform: translate(-22%, -36%);
+}
+.tripTitle {
+    padding-bottom: .5em;
+    font-size: 150%;
+    font-weight: bold;
+    color: #006942;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+}
+.button {
+    grid-column: 1 / 4;
+    width: 20%;
+    background-color: gold;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    /* transition: background-color .5s; */
+    transition: .5s;
+}
+.button:hover {
+    transform: scale(1.1);
+    /* background-color: gold; */
+    cursor: pointer;
+
+}
+
+.triangleTransition {
+    height: 3em;
+    margin-top: -3em;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+}
+
+/*** Newsletter Signup ***/
+.foregroundBox {
+    position: relative;
+    margin: 3em 20% 0em 20%;
+    padding: 1em;
+    background-color:#006942;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 125%;
+    color: white;
+}
+.foregroundTitle {
+    font-size: 200%;
+    font-weight: 600;
+    padding-top: .5em;
+    padding-bottom: .25em
+}
+.foregroundDesc {
+    font-size: 120%;
+}
+
+/* Form*/
+input {
+    font-family: "League Spartan", sans-serif;
+    font-size: 90%;
+}
+#newsletterEmail, #newsletterName {
+    margin-top: 1em;
+    margin-left: .25em;
+    margin-right: .25em;
+    padding: .75em;
+    border-radius: 100px;
+    border: none;
+}
+.formBtn {
+    background-color: gold;
+    margin-top: 1.5em;
+    margin-bottom: .1em;
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px -4px rgba(0,0,0,0.5);
+    transition-duration: .5s;
+}
+.formBtn:hover {
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+
+/* Modal */
+.newsletterModal {
+    display: block;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    width: 30%;
+    height: 30%;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.greyOverlay {
+    display: block;
+    position: fixed;
+    z-index: 9;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.7);
+}
+
+
+/***** Info Page *****/
+.header {
+    background-image: url(green\ background.svg);
+    background-size: cover;
+    height: calc(50vh - 70px);
+    text-align: center;
+    margin: auto;
+}
+.headerShape {
+    height: 3em;
+    background-color: white;
+    clip-path: polygon(50% 90%, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -3em;
+    z-index: 2;
+}
+.headerTitle {
+    color:#006942;
+    font-size: 300%;
+}
+.headerSubtitle {
+    color:#19ad77;
+    font-size: 250%;
+}
+.headerDesc {
+    color: white;
+    font-size: 150%;
+}
+
+/***** Footer *****/
+footer {
+    position: relative;
+    font-family: "League Spartan", sans-serif;
+    background: white;
+    z-index: 1;
+}
+.footerContainer {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 16px 16px -12px rgba(0,0,0,0.5);
+}
+
+/* Upper Section with Logo, Contact Info, and Mission Statement */
+.footerMain {
+    margin: 0 20%;
+}
+.footerTop {
+    display: grid;
+    grid-template-columns: 33.33% 66.66%;
+    min-height: fit-content;
+}
+.contact {
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+.footerLogo {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 500%;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+.contactIcons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow:hidden;
+}
+.contactIcons > div {
+    min-width: 1em;
+    min-height: 1em;
+    display: grid;
+    place-items: center;
+}
+.mission { 
+    text-align: center;
+    padding: 1em;
+}
+
+/* Lower Navigation Section */
+.footerBottom { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    padding-bottom: 2em;
+    min-height: fit-content;
+}
+.footerTitle {
+    text-align: center;
+    padding: .5em;
+    font-size: 150%;
+    font-weight: bold;
+    color: #006942;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+}
+.footerList {
+    text-align: center;
+    font-size: 110%;
+}
+.footerList > li {
+    padding: .25em;
+}
+.footerList > li:hover {
+    color: grey;
+}
+
+/* Bottom Strip */
+.copyright {
+    text-align: center;
+    background-color: #006942;
+    color: white;
+    padding: 1em;
+    font-weight: 300;
+}
+
+/**/
+.show {
+    display: block;
+    opacity: 100%;
+}
+.hidden {
+    display: none;
+    opacity: 0%;
+}
