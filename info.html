@@ -22,40 +22,45 @@
     <div class="navLogo"><a href="index.html">zelená</a></div>
     <div class="navTabs">
         <div id="navTab1" onmouseover="triggerDropdown1()">
-            <div class="navTitle"><a href="info.html">Information Database <img src="down-arrow.png" class="down"></a></div>
+            <div class="navTitle"><a href="info.html">Information Database <img src="images/down-arrow.png" class="down"></a></div>
             <div id="1" class="dropdownTab fadeIn">
                 <div class="dropdownTitle"><a href="info.html" id="titleLink">Information Database</a></div>
                 <ul class="dropdownList">
-                    <li><a href="info.html">Green Energy Solutions</a></li>
-                    <li><a href="info.html">Costs</a></li>
-                    <li><a href="info.html">Tax Rebate</a></li>
+                    <li><a href="info.html#electricityGeneration">Electricity Generation</a></li>
+                    <li class="indent"><a href="infoSubpages/solar.html">Solar Energy</a></li>
+                    <li class="indent"><a href="infoSubpages/wind.html">Wind Energy</a></li>
+                    <li><a href="info.html#heatingAndCooling">Heating and Cooling</a></li>
+                    <li class="indent"><a href="infoSubpages/geothermal.html">Geothermal Energy</a></li>
+                    <li class="indent"><a href="infoSubpages/solarWater.html">Solar Water Heating</a></li>
+                    <li><a href="info.html#miscellaneous">Miscellaneous</a></li>
+                    <li class="indent"><a href="infoSubpages/energyEfficiency.html">Electricity Efficiency</a></li>
                 </ul>
             </div>
         </div>
         <div id="navTab2" onmouseover="triggerDropdown2()">
-            <div class="navTitle"><a href="about.html">About <img src="down-arrow.png" class="down"></a></div>
+            <div class="navTitle"><a href="about.html">About <img src="images/down-arrow.png" class="down"></a></div>
             <div id="2" class="dropdownTab">
                 <div class="dropdownTitle"><a href="about.html" id="titleLink">About</a></div>
                 <ul class="dropdownList">
-                    <li>About Us</li>
-                    <li>FAQ</li>
-                    <li>Statement of Affirmation</li>
+                    <li><a href="about.html#aboutUs">About Us</a></li>
+                    <li><a href="about.html#faq">FAQ</a></li>
+                    <li><a href="about.html#statement">Statement of Affirmation</a></li>
                 </ul>
             </div>
         </div>
         <div id="navTab3" onmouseover="triggerDropdown3()">
-            <div class="navTitle"><a href="references.html">References <img src="down-arrow.png" class="down"></a></div>
+            <div class="navTitle"><a href="references.html">References <img src="images/down-arrow.png" class="down"></a></div>
             <div id="3" class="dropdownTab">
                 <div class="dropdownTitle"><a href="resources.html" id="titleLink">References</a></div>
                 <ul class="dropdownList">
-                    <li>Works Cited</li>
-                    <li>Plan of Work Log</li>
-                    <li>Student Copyright Checklist</li>
+                    <li><a href="references.html#worksCited">Works Cited</a></li>
+                    <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
+                    <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="navMenu"><span class="material-symbols-outlined">menu</span></div>
+    <div class="navMenu"></div>
 </div>
 </nav>
 
@@ -63,67 +68,91 @@
     <div class="headerBox">
         <div class="headerTitle">Information Database</div>
         <div class="headerSubtitle">Explore Your Possibilities!</div>
-        <div class="headerDesc">
-            We've compiled a list of every green energy initiative offered by the Environmental Protection Agency here on one page!
-            Click each box to learn more about it.
-        </div>
     </div>
 </div>
 
 <div class="headerShape"></div>
 
-
 <main>
-<!-- <div class="filler"></div>  -->
-<!-- 
-<div class="greenBackground">
-    <div class="mainBox">
-        Welcome to <span class="logo">zelená</span>, your best resource for finding green energy solutions for your home! 
-        Check out our information sections regarding renewable solutions, installation costs, and tax rebate applicability. 
-    </div>     
-    <div class="tripleBox">
-        <div class="tripBox">
-            <div class="tripImg"></div>
-            <div class="tripTitle">Solutions</div>
-            <div class="tripDesc">
-                Click for a list of all the green energy initatives offered by the Environmental Protection Agency.
-            </div>
+<div class="filler"></div> 
+
+<div class="greenBackground2"></div>
+<div class="infoBox2">
+    <div class="infoTitle">Welcome!</div>
+    No matter your budget, there are several steps you can take to use cleaner energy in your home. 
+    We've compiled information about every green energy initiative offered by the Environmental Protection Agency here on one page!
+    From harnessing the power of the sun to utiziling the heat of the depths, each of the following options makes great bounds in making the world a more sustainable place for everyone.
+</div>    
+
+<div class="gradientBackground">   
+    <div id="electricityGeneration" class="filler"></div> 
+    <div class="arrayHeader">
+        <div class="arrayHeaderText">Electricity Generation</div>
+    </div>
+    <div class="doubleSolutionArray">
+        <div class="tripBox"><a href="infoSubpages/solar.html">
+            <div class="tripImg" id="tripImg1"><img src="images/solar panels 2.jpg"></div>
+            <div class="tripTitle">Solar Energy</div>
+            <div class="tripDesc">Convert solar energy into electricity.</div>
+            <div class="solutionBtn">Learn More</div></a>
         </div>
-        <div class="tripBox">
-            <div class="tripImg"></div>
-            <div class="tripTitle">Costs</div>
-            <div class="tripDesc">
-                Click to learn about about how much it will cost.
-            </div>
-        </div>
-        <div class="tripBox">
-            <div class="tripImg"></div>
-            <div class="tripTitle">Tax Rebate</div>
-            <div class="tripDesc">
-                Commit tax evasion.
-            </div>
+        <div class="tripBox"><a href="infoSubpages/wind.html">
+            <div class="tripImg" id="tripImg2"><img src="images/sunset turbines.jpg"></div>
+            <div class="tripTitle">Wind Energy</div>
+            <div class="tripDesc">Convert wind energy into electricity.</div>
+            <div class="solutionBtn">Learn More</div></a>
         </div>
     </div>
+    <div id="heatingAndCooling" class="filler"></div> 
+    <div class="arrayHeader">
+        <div class="arrayHeaderText">Heating and Cooling</div>
+    </div>
+    <div class="doubleSolutionArray">
+        <div class="tripBox"><a href="infoSubpages/geothermal.html">
+            <div class="tripImg" id="tripImg3"><img src="images/volcano.jpg"></div>
+            <div class="tripTitle">Geothermal Energy</div>
+            <div class="tripDesc">From the depths of the Earth.</div>
+            <div class="solutionBtn">Learn More</div></a>
+        </div>
+        <div class="tripBox"><a href="infoSubpages/solarWater.html">
+            <div class="tripImg" id="tripImg3"><img src="images/solar panel.jpg"></div>
+            <div class="tripTitle">Solar Water Heaters</div>
+            <div class="tripDesc">Thermal heating.</div>
+            <div class="solutionBtn">Learn More</div></a>
+        </div>
+    </div>
+    <div id="miscellaneous" class="filler"></div> 
+    <div class="arrayHeader">
+        <div class="arrayHeaderText">Miscellaneous</div>
+    </div>
+    <div class="singleSolutionArray">
+        <div class="tripBox"><a href="infoSubpages/energyEfficiency.html">
+            <div class="tripImg" id="tripImg3"><img src="images/energy bulb.jpg"></div>
+            <div class="tripTitle">Energy Efficiency</div>
+            <div class="tripDesc">Save some energy!</div>
+            <div class="solutionBtn">Learn More</div></a>
+        </div>
+    </div>
+    </div>
 </div>
-
-<div class="triangleTransition"></div>
 
 <div class="foregroundBox">
     <div class="foregroundTitle">Join Our Email List!</div>
     <div class="foregroundDesc">
         Get notified of changes when they happen.
     </div>
-    <div class="newsletterForm">
-        <form class="newsletterEmail">Email</form>
-        <submit class="button">Submit</submit>
-    </div>
+    <form class="newsletterForm">
+        <input type="text" name="name" placeholder="Full Name" required id="newsletterName">
+        <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
+        <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
+    </form>
 </div>
 
-<div class="newsletterModal">
-    <div class="greyOverlay"></div>
-    <div class="modalMessage">Thank you for joining</div>
-</div>
+<div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
+<div id="newsletterModal" class="newsletterModal hidden">
 
+    <div class="modalMessage">Thank you for joining! We wish you the best of luck on your endeavors!</div>
+</div>
 
 </main>
 </body>
@@ -135,46 +164,48 @@
             <div class="contact">
                 <div class="footerLogo">zelená</div>
                 <div class="contactIcons">
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
-                    <div>a</div>
+                    <div><a href="https://twitter.com/zelenacompany" target="_blank"><img src="images/twitter.png" width="20px"></a></div>
+                    <div><a href="https://www.instagram.com/zelenacompany/" target="_blank"><img src="images/instagram.png" width="20px"></a></div>
+                    <div><a href="https://www.facebook.com/profile.php?id=61555800010255" target="_blank"><img src="images/facebook.png" width="20px"></a></div>
+                    <div><a href="https://www.youtube.com/channel/UCstBjnh887LpEMz6A6dJ-5w" target="_blank"><img src="images/youtube.png" width="20px"></a></div>
                 </div>
             </div>
             <div class="mission">
-                Here at zelená, we are dedicated to bring green energy solutions to you! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper eget duis at tellus at. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Id semper risus in hendrerit gravida rutrum. Vitae nunc sed velit dignissim sodales ut. Ac tincidunt vitae semper quis lectus nulla. Eget dolor morbi non arcu risus quis varius quam. Sapien faucibus et molestie ac feugiat sed lectus. Consequat interdum varius sit amet mattis. Tortor aliquam nulla facilisi cras fermentum. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Dapibus ultrices in iaculis nunc sed.
+                Our Mission: Here at zelená, our mission is to be at the forefront of the renewable energy revolution, driving the global transition towards a sustainable and greener future. 
+                We are dedicated to compiling innovative green energy solutions to meet the world's growing energy needs while minimizing our global environmental impact.
             </div>
         </div>
         <div class="footerBottom">
             <div id="footerNav1">
-                <div class="footerTitle">Information</div>
+                <div class="footerTitle"><a href="info.html" id="titleLink">Information Database</a></div>
                 <ul class="footerList">
-                    <li>Green Energy</li>
-                    <li>Costs</li>
-                    <li>Tax Rebate</li>
+                    <li><a href="infosubpages/solar.html">Solar Energy</a></li>
+                    <li><a href="infosubpages/wind.html">Wind Energy</a></li>
+                    <li><a href="infosubpages/geothermal.html">Geothermal Energy</a></li>
+                    <li><a href="infosubpages/solarWater.html">Solar Water Heating</a></li>
+                    <li><a href="infosubpages/energyEfficiency.html">Electricity Efficiency</a></li>
                 </ul>
             </div>
             <div id="footerNav2">
-                <div class="footerTitle">About</div>
+                <div class="footerTitle"><a href="../about.html" id="titleLink">About</a></div>
                 <ul class="footerList">
-                    <li>About Us</li>
-                    <li>FAQ</li>
-                    <li>Statement of Affirmation</li>
+                    <li><a href="about.html#aboutUs">About Us</a></li>
+                    <li><a href="about.html#faq">FAQ</a></li>
+                    <li><a href="about.html#statement">Statement of Affirmation</a></li>
                 </ul>
             </div>
             <div id="footerNav3">
-                <div class="footerTitle">References</div>
+                <div class="footerTitle"><a href="references.html" id="titleLink">References</a></div>
                 <ul class="footerList">
-                    <li>Works Cited</li>
-                    <li>Plan of Work Log</li>
-                    <li>Student Copyright Checklist</li>
+                    <li><a href="references.html#worksCited">Works Cited</a></li>
+                    <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
+                    <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-<div class="copyright">Copyright © zelená 2024 – All rights reserved</div>
+<div class="copyright">Copyright © zelená 2024 – Webmaster 2103-901</div>
 </footer>
 
-</html> -->
+</html>

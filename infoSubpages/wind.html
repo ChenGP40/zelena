@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>zelená</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../webmaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="../webmaster.js"></script>
+</head>
+
+<body>
+<nav onmouseleave="closeDropdowns()">
+<div class="navContainer">
+    <div class="navLogo"><a href="../index.html">zelená</a></div>
+    <div class="navTabs">
+        <div id="navTab1" onmouseover="triggerDropdown1()">
+            <div class="navTitle"><a href="../info.html">Information Database <img src="../images/down-arrow.png" class="down"></a></div>
+            <div id="1" class="dropdownTab fadeIn">
+                <div class="dropdownTitle"><a href="../info.html" id="titleLink">Information Database</a></div>
+                <ul class="dropdownList">
+                    <li><a href="../info.html#electricityGeneration">Electricity Generation</a></li>
+                    <li class="indent"><a href="solar.html">Solar Energy</a></li>
+                    <li class="indent"><a href="wind.html">Wind Energy</a></li>
+                    <li><a href="../info.html#heatingAndCooling">Heating and Cooling</a></li>
+                    <li class="indent"><a href="geothermal.html">Geothermal Energy</a></li>
+                    <li class="indent"><a href="solarWater.html">Solar Water Heating</a></li>
+                    <li><a href="../info.html#miscellaneous">Miscellaneous</a></li>
+                    <li class="indent"><a href="energyEfficiency.html">Electricity Efficiency</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="navTab2" onmouseover="triggerDropdown2()">
+            <div class="navTitle"><a href="../about.html">About <img src="../images/down-arrow.png" class="down"></a></div>
+            <div id="2" class="dropdownTab">
+                <div class="dropdownTitle"><a href="../about.html" id="titleLink">About</a></div>
+                <ul class="dropdownList">
+                    <li><a href="../about.html#aboutUs">About Us</a></li>
+                    <li><a href="../about.html#faq">FAQ</a></li>
+                    <li><a href="../about.html#statement">Statement of Affirmation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="navTab3" onmouseover="triggerDropdown3()">
+            <div class="navTitle"><a href="../references.html">References <img src="../images/down-arrow.png" class="down"></a></div>
+            <div id="3" class="dropdownTab">
+                <div class="dropdownTitle"><a href="../resources.html" id="titleLink">References</a></div>
+                <ul class="dropdownList">
+                    <li><a href="../references.html#worksCited">Works Cited</a></li>
+                    <li><a href="../references.html#planOfWork">Plan of Work Log</a></li>
+                    <li><a href="../references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navMenu"></div>
+</div>
+</nav>
+
+<div class="subHeader">
+    <div class="headerBox">
+        <div class="headerTitle">Wind Energy</div>
+    </div>
+</div>
+
+<main>
+
+<div class="infoBoxDecor3">
+    <div class="infoBox">
+        <div class="infoTitle">What is Wind Energy?</div>
+        Wind turbines create energy by using force from the wind to turn blades connected to a generator, where the motion is converted into energy. 
+        The blades of a wind turbine are designed to be aerodynamic, similar to helicopter blades, to maximize efficiency. 
+        Most wind turbines fall into two basic types: horizontal-axis turbines and vertical-axis turbines. When you think of a wind turbine, you likely picture a horizontal-axis turbine. 
+        These are typically very large and are used primarily in large wind plants, but some smaller models exist to be used in populated areas. Vertical-axis turbines are typically smaller and are used primarily in residential areas. 
+        They are conveniently omnidirectional, meaning they don’t require the wind to blow in a specific direction to function.
+    </div>    
+    <div class="subpageImg"><img src="../images/windmill.jpg"></div>
+</div>
+<div class="filler"></div>
+
+
+<div class="collapsible">Prerequisites:</div>
+<div class="content">
+    <p style="padding-top: 1em; padding-bottom: 1em">Home wind energy systems will be the most successful in very windy environments. 
+        To install one on your property, you must own at least one acre of land and you must be located in an area with an average annual wind speed of at least 10 mph. 
+        You can determine what height your wind turbine will need to be based on any nearby structures that will interfere with the wind, such as buildings and trees.
+    </p>
+</div>
+
+<div class="collapsible">Costs:</div>
+<div class="content">
+    <p style="padding-top: 1em; padding-bottom: 1em">Wind energy systems typically cost from $10,000 to $40,000 depending on the type, size, and complexity of the system. 
+        Installation costs depend on the availability of contractors in your area. You should contact companies in your area for quotes to get the most accurate estimates. 
+        You should also purchase a battery to store any excess electricity produced by your wind energy system to be used on days without enough wind speed.
+    </p>
+
+</div>
+<div class="collapsible">Financial Incentives:</div>
+<div class="content">
+    <p style="padding-top: 1em; padding-bottom: 1em">Depending on the size and energy needs of your home, a wind energy system of the proper size and efficiency can generate enough electricity to completely power your home. 
+        Wind energy systems typically save enough money on electricity bills to pay for themselves within 6 to 20 years. 
+        Any excess energy produced by your wind system can be stored in a battery to be used later or sold, furthering its financial benefits. 
+        The IRS offers a 30% tax credit on any new clean energy property. 
+        This is called Residential Clean Energy Credit, and it applies to newly purchased and installed home wind turbines, decreasing the cost by 30%.</p>
+</div>
+    
+
+
+    <script>
+        var collapse = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < collapse.length; i++) {
+        collapse[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+<div class="foregroundBox">
+    <div class="foregroundTitle">Join Our Email List!</div>
+    <div class="foregroundDesc">
+        Get notified of changes when they happen.
+    </div>
+    <form class="newsletterForm">
+        <input type="text" name="name" placeholder="Full Name" required id="newsletterName">
+        <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
+        <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
+    </form>
+</div>
+
+<div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
+<div id="newsletterModal" class="newsletterModal hidden">
+
+    <div class="modalMessage">Thank you for joining! We wish you the best of luck on your endeavors!</div>
+</div>
+
+</main>
+
+<footer>
+<div class="footerContainer">
+    <div class="footerMain">
+        <div class="footerTop">
+            <div class="contact">
+                <div class="footerLogo">zelená</div>
+                <div class="contactIcons">
+                    <div><a href="https://twitter.com/zelenacompany" target="_blank"><img src="../images/twitter.png" width="20px"></a></div>
+                    <div><a href="https://www.instagram.com/zelenacompany/" target="_blank"><img src="../images/instagram.png" width="20px"></a></div>
+                    <div><a href="https://www.facebook.com/profile.php?id=61555800010255" target="_blank"><img src="../images/facebook.png" width="20px"></a></div>
+                    <div><a href="https://www.youtube.com/channel/UCstBjnh887LpEMz6A6dJ-5w" target="_blank"><img src="../images/youtube.png" width="20px"></a></div>
+                </div>
+            </div>
+            <div class="mission">
+                Our Mission: Here at zelená, our mission is to be at the forefront of the renewable energy revolution, driving the global transition towards a sustainable and greener future. 
+                We are dedicated to compiling innovative green energy solutions to meet the world's growing energy needs while minimizing our global environmental impact.
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div id="footerNav1">
+                <div class="footerTitle"><a href="../info.html" id="titleLink">Information Database</a></div>
+                <ul class="footerList">
+                    <li><a href="solar.html">Solar Energy</a></li>
+                    <li><a href="wind.html">Wind Energy</a></li>
+                    <li><a href="geothermal.html">Geothermal Energy</a></li>
+                    <li><a href="solarWater.html">Solar Water Heating</a></li>
+                    <li><a href="energyEfficiency.html">Electricity Efficiency</a></li>
+                </ul>
+            </div>
+            <div id="footerNav2">
+                <div class="footerTitle"><a href="../about.html" id="titleLink">About</a></div>
+                <ul class="footerList">
+                    <li><a href="../about.html#aboutUs">About Us</a></li>
+                    <li><a href="../about.html#faq">FAQ</a></li>
+                    <li><a href="../about.html#statement">Statement of Affirmation</a></li>
+                </ul>
+            </div>
+            <div id="footerNav3">
+                <div class="footerTitle"><a href="../references.html" id="titleLink">References</a></div>
+                <ul class="footerList">
+                    <li><a href="../references.html#worksCited">Works Cited</a></li>
+                    <li><a href="../references.html#planOfWork">Plan of Work Log</a></li>
+                    <li><a href="../references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">Copyright © zelená 2024 – Webmaster 2103-901</div>
+</footer>

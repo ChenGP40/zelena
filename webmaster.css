@@ -1,7 +1,6 @@
-* {
-    outline: red 1px transparent;
+html {
+    scroll-behavior: smooth;
 }
-
 a {
     text-decoration: none;
     color: black;
@@ -31,8 +30,10 @@ a:hover {
 
 /*Code*/
 body {
-    background-image: url(geometric\ background.jpg);
+    background-image: url(images/geometric\ background.jpg);
     font-family: "League Spartan", sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
 }
 main {
     position: relative;
@@ -81,7 +82,7 @@ nav {
     display: none;
     opacity: 0;
     position: absolute;
-    top: 3em;
+    top: 2em;
     min-width: 15em;
     background: white;
     padding: 0 1em 1em 1em;
@@ -101,6 +102,9 @@ nav {
 }
 .dropdownList > li {
     padding-top: .5em;
+}
+.indent{
+    padding-left: 20px;
 }
 .fadeIn {
     transition-duration: 3s;
@@ -149,7 +153,7 @@ nav {
 .infoBoxDecor {
     position: relative;
     background-image: linear-gradient(135deg, #4df068, #006942);
-    padding: 1em;
+    padding: .5em;
     margin: 0 18% -140px 18%;
     box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
     border-radius: 10px;
@@ -183,7 +187,7 @@ nav {
     z-index: 1;
 }
 .greenBackground {
-    background-image: url(green\ background.svg);
+    background-image: url(images/green\ background.svg);
     background-size: cover;
 }
 .logo {
@@ -202,6 +206,7 @@ nav {
     padding-bottom: 3em;
 }
 .tripBox {
+    display: grid;
     position: relative;
     background-color: white;
     margin: 2em;
@@ -241,6 +246,7 @@ nav {
     color: #006942;
     text-decoration: underline 1px solid #006942;
     text-underline-offset: .25em;
+    line-height: 40px;
 }
 .button {
     grid-column: 1 / 4;
@@ -324,18 +330,26 @@ input {
 .newsletterModal {
     display: block;
     position: fixed;
-    background-color: white;
-    z-index: 10;
+    background-color: #006942;
+    z-index: 20;
     width: 30%;
-    height: 30%;
+    height: fit-content;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-family: "League Spartan", sans-serif;
+    padding: 3em;
+    align-items: center;
+    font-weight: 500;
 }
 .greyOverlay {
     display: block;
     position: fixed;
-    z-index: 9;
+    z-index: 10;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -347,30 +361,190 @@ input {
 
 /***** Info Page *****/
 .header {
-    background-image: url(green\ background.svg);
-    background-size: cover;
+    background-image:linear-gradient(#00160e, #006942 70%);
     height: calc(50vh - 70px);
     text-align: center;
-    margin: auto;
+    display: grid;
+    place-items: center;
+    /* box-shadow:inset 0px 4px 20px -4px rgba(0,0,0,0.5); */
+}
+.headerBox {
+    padding-top: 2em;
 }
 .headerShape {
-    height: 3em;
-    background-color: white;
-    clip-path: polygon(50% 90%, 100% 0, 100% 100%, 0 100%, 0 0);
-    margin-top: -3em;
+    position: relative;
+    height: 5em;
+    background-color: #006942;
+    clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 50% 100%);
+    margin-top: -2.5em;
+    margin-bottom: -2.5em;
     z-index: 2;
 }
 .headerTitle {
-    color:#006942;
+    color:white;
     font-size: 300%;
+    padding-bottom: .25em;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
 .headerSubtitle {
-    color:#19ad77;
+    color:#FFFFFFC7;
     font-size: 250%;
+    padding-bottom: .5em;
+    text-shadow: 0px 0px 10px rgba(0,0,0,.6);
 }
 .headerDesc {
     color: white;
     font-size: 150%;
+    text-shadow: 0px 0px 10px rgba(0,0,0,.6);
+    line-height: 35px;
+}
+.greenBackground2 {
+    background-image: url(images/green\ background.svg);
+    background-size: cover;
+    margin-top: 3em;
+    height: 15em;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+.infoBox2 {
+    position: relative;
+    margin: 1em 20%;
+    padding: 2.5em;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 125%;
+    transform: translateY(-107%);
+}
+.gradientBackground {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    margin-top: -12em;
+}
+.arrayHeader {
+    background-color: white;
+    margin: 1em 30%;
+    padding: .5em;
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    display: grid;
+    place-items: center;
+    border:#19ad77 5px solid;
+}
+.arrayHeaderText {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 400%;
+    font-weight: bold;
+}
+.doubleSolutionArray {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 125%;
+    margin: 0 25%;
+}
+.solutionBtn {
+    float: bottom;
+    background-color: gold;
+    margin: 1.5em 15% .1em 15%;
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px -4px rgba(0,0,0,0.5);
+    transition-duration: .5s;
+}
+.singleSolutionArray {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 125%;
+    padding-bottom: 3em;
+    margin: 0 37%;
+}
+
+
+/***** Subpages *****/
+.subHeader {
+    position: relative;
+    background-image: linear-gradient(90deg, #4df068, #006942);
+    height: calc(50vh - 350px);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    /* clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%); */
+    margin-bottom: calc((0.2 * (50vh - 350px)) * (-1));
+    z-index: 3;
+}
+.subpageImageContainer {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    height: calc(100vh - 70px - (50vh - 350px));
+}
+.subpageImg {
+    display: grid;
+    place-items: center;
+}
+.subpageImg > img {
+    width: 30%;
+    border-radius: 50px;
+    margin: 1em 0;
+    box-shadow: 0px 4px 20px -4px rgba(0,0,0,0.5);
+}
+
+.infoBoxDecor3 {
+    position: relative;
+    background-image: linear-gradient(90deg, #4df068, #006942);
+    padding: 1.5em;
+    margin: 0;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    z-index: 5;
+}
+
+.collapsible {
+    background-color: white;
+    color: #006942;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+    font-family: "League Spartan", sans-serif;
+    font-weight: bold;
+    font-size: 175%;
+    cursor: pointer;
+    margin: auto;
+    padding: 20px;
+    width: 60vw;
+    text-align: left;
+}
+.active, .collapsible:hover {
+    background-color: rgb(231, 231, 231);
+}
+.content {
+    margin: auto;
+    width: 60vw;
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    font-size: 21.25px;
+}
+.collapsible:after {
+    font-family: "League Spartan", sans-serif;
+    content: '+';
+    font-size: 21.25px;
+    font-weight: bold;
+    color: black;
+    float: right;
+}
+.active:after {
+    content: "-";
 }
 
 /***** Footer *****/
@@ -412,7 +586,7 @@ footer {
 }
 .contactIcons {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     overflow:hidden;
 }
 .contactIcons > div {
